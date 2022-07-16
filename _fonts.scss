@@ -1,0 +1,90 @@
+@use 'colors';
+
+@mixin h1 {
+    color: colors.$dark1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px; 
+};
+
+@mixin h2 {
+    color: colors.$dark1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+};
+
+@mixin h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    color: colors.$pink;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    padding: 50px 0 0 0;
+    text-transform: uppercase;
+};
+
+@mixin cards-gloop {
+    color: colors.$orange;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    padding: 20px 0 0 20px;
+};
+@mixin cards-bid{
+    color: colors.$dark3;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    padding: 20px 20px 0 0;
+    text-align: right;
+    text-transform: uppercase;
+};
+@mixin cards-color {
+    color: colors.$dark1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    padding: 0 0 0 20px;
+};
+@mixin cards-price {
+    color: colors.$dark1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    padding: 0 20px 0 0;
+    text-align: right;
+};
+@mixin cards-number {
+    color: colors.$dark3;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    padding: 0 0 0 20px;
+};
+@mixin cards-day {
+    color: colors.$dark3;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    padding: 0 20px 0 0;
+    text-align: right;
+};
