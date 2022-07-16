@@ -18,11 +18,19 @@ header {
     header{
         margin: 0;
     }
-    .menu-link{
+    .hamburger {
+        display: none;
+    }
+    .menu-link {
         display: inline-block;
     }
-    .hamburger{
-        display: none;
+    a {
+        color: colors.$dark2;
+        padding: 25px;
+        text-decoration: none;
+    }
+    .different-anchor{
+        color: colors.$pink;
     }
 }
 h1 {
@@ -41,10 +49,16 @@ h3{
         color: colors.$dark2;
      } 
 }
+.introductiom-img2 {
+    display: none;
+}
 @media only screen and (min-width: 1200px){
-    .introduction{
-        margin: 0;
+    .introductiom-img2 {
+        display: inline-block;
     }
+    .introduction-img1{
+        display: none;
+    } 
 }
 button{
     background-color: white;
@@ -161,7 +175,12 @@ footer {
 .mini-cocial-logo{
     display: flex;
     justify-content: space-around;
-    width: 65%;
+    width: 25%;
+}
+@media only screen and (min-width: 1200px) {
+    .mini-cocial-logo{
+        width: 65%;
+    }
 }
 ul{
     list-style-type: none;
@@ -170,11 +189,9 @@ ul{
 .footer-list-name {
     @include fonts.footer-list-name;
 }
-
 .list{
     @include fonts.footer-list;
 }
-
 .page-end1, .page-end2{
     color: colors.$dark4;
     font-family: 'Inter';
