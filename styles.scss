@@ -1,0 +1,218 @@
+@use 'colors';
+@use 'fonts';
+
+@media only screen and (min-width: 1200px){
+    body{
+        margin: 5%;
+    }
+}
+header {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-link{
+    display: none;
+}
+@media only screen and (min-width: 1200px){
+    header{
+        margin: 0;
+    }
+    .hamburger {
+        display: none;
+    }
+    .menu-link {
+        display: inline-block;
+    }
+    a {
+        color: colors.$dark2;
+        padding: 25px;
+        text-decoration: none;
+    }
+    .different-anchor{
+        color: colors.$pink;
+    }
+}
+h1 {
+    @include fonts.h1
+}
+h2{
+    @include fonts.h2;
+}
+h3{
+    @include fonts.h3;
+}
+.introduction{
+    display: flex;
+    margin: 0 0 0 5%;
+    p{
+        color: colors.$dark2;
+     } 
+}
+.introductiom-img2 {
+    display: none;
+}
+@media only screen and (min-width: 1200px){
+    .introductiom-img2 {
+        display: inline-block;
+    }
+    .introduction-img1{
+        display: none;
+    } 
+}
+button{
+    background-color: white;
+    border: 4px solid;
+    border-color: colors.$orange;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 18px 45px;
+}
+.introduction1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+.promotion{
+    background: url(assets/background.svg);
+    background-repeat: no-repeat;
+    padding: 60px 15px 15px 15px;
+    margin: 60px 0;
+}
+@media only screen and (min-width: 1200px){
+    .promotion{
+        border-radius: 20px;
+    }
+}
+.press{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+@media only screen and (min-width: 1200px){
+    .press{
+        margin: 0;
+    }
+}
+.no-mobile-first{
+    display: none;
+}
+@media only screen and (min-width: 1200px){
+    .no-mobile-first{
+        display: inline-block;
+    }
+}
+.showcase{
+    margin: 0 5% 15% 5%;
+}
+@media only screen and (min-width: 1200px){
+    .showcase{
+        margin: 0;
+    }
+}
+.showcase a{
+    color: colors.$dark1;
+}
+.cards-scroll{
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+}
+@media screen and (min-width: 1200px){
+    .cards-scroll {
+        justify-content: space-around;
+        overflow:visible;
+    }
+}
+.mini-img{
+    padding: 0 8px;
+}
+.purple, .beige, .red, .green {
+    background-color: colors.$light2;
+    border-radius: 20px;
+}
+.first-line, .second-line, .third-line{
+    display: flex;
+    justify-content: space-between;
+}
+.cards-gloop {
+    @include fonts.cards-gloop;
+}
+.cards-bid {
+    @include fonts.cards-bid;
+}
+.cards-color {
+    @include fonts.cards-color;
+}
+.cards-price {
+    @include fonts.cards-price;
+}
+.cards-number {
+    @include fonts.cards-number;
+}
+.cards-day {
+    @include fonts.cards-day;
+} 
+footer {
+    margin: 10% 5% 20% 5%;
+}
+@media only screen and (min-width: 1200px){
+    footer{
+        margin: 0;
+    }
+}
+.footer-info{
+    display: flex;
+    padding: 15px;
+}
+.footer-top{
+    padding: 50px 0 0 0;
+}
+.mini-cocial-logo{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+@media only screen and (min-width: 1200px) {
+    .mini-cocial-logo{
+        width: 65%;
+    }
+}
+ul{
+    list-style-type: none;
+    padding: 10px;
+}
+.footer-list-name {
+    @include fonts.footer-list-name;
+}
+.list{
+    @include fonts.footer-list;
+}
+.page-end1, .page-end2{
+    color: colors.$dark4;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+}
+.page-end2{
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .page-end2{
+        display: inline-block;
+    }
+    .page-end{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-no-mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+}
