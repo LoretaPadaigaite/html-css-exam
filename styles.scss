@@ -7,7 +7,27 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
+.menu-link{
+    display: none;
+}
+/*@media only screens and (min-width: 1200px){
+    nav{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+}*/
+/*
+@media only screens and (min-width: 1200px){
+    .menu-link{
+        display: inline-block;
+    }
+    .hamburger{
+        display: none;
+    }
+}
+*/
 h1 {
     @include fonts.h1
 }
@@ -60,17 +80,34 @@ line-height: 150%;
     justify-content: space-between;
     margin: 0 5%;
 }
+.no-mobile-first{
+    display: none;
+}
+@media only screen and (min-width: 1200px){
+    .no-mobile-first{
+        display: inline-block;
+    }
+}
+
 .showcase{
     margin: 0 5% 15% 5%;
 }
 .showcase a{
     color: colors.$dark1;
 }
-.cards{
+.cards-scroll{
     display: flex;
     gap: 25px;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
+@media screen and (min-width: 1200px){
+    .cards-scroll {
+        justify-content: space-around;
+        overflow-x: unset;
+    }
+}
+    
+
 .mini-img{
     padding: 0 8px;
 }
