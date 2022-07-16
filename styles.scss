@@ -11,12 +11,18 @@ header {
     display: flex;
     justify-content: space-between;
 }
+@media only screen and (min-width: 1200px){
+    header{
+        margin: 0;
+    }
+}
+
 .menu-link{
     display: none;
 }
 /*@media only screens and (min-width: 1200px){
     nav{
-        display: block;
+        display: inline-block;
     }
     .hamburger{
         display: none;
@@ -56,6 +62,11 @@ h3{
         height: 50%;
      }
 }
+@media only screen and (min-width: 1200px){
+    .introduction{
+        margin: 0;
+    }
+}
 button{
     background-color: white;
     border: 4px solid;
@@ -90,6 +101,11 @@ button{
     justify-content: space-between;
     margin: 0 5%;
 }
+@media only screen and (min-width: 1200px){
+    .press{
+        margin: 0;
+    }
+}
 .no-mobile-first{
     display: none;
 }
@@ -101,6 +117,11 @@ button{
 
 .showcase{
     margin: 0 5% 15% 5%;
+}
+@media only screen and (min-width: 1200px){
+    .showcase{
+        margin: 0;
+    }
 }
 .showcase a{
     color: colors.$dark1;
@@ -151,7 +172,11 @@ button{
 footer {
     margin: 10% 5% 20% 5%;
 }
-
+@media only screen and (min-width: 1200px){
+    footer{
+        margin: 0;
+    }
+}
 .footer-info{
     display: flex;
 }
@@ -167,11 +192,23 @@ ul{
     @include fonts.footer-list;
 }
 
-.page-end{
+.page-end1, .page-end2{
     color: colors.$dark4;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
+}
+.page-end2{
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .page-end2{
+        display: inline-block;
+    }
+    .page-end{
+        display: flex;
+        justify-content: space-between;
+    }
 }
